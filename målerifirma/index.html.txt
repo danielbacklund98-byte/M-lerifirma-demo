@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Måleri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #111;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image1.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      background: #eee;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      background: #111;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      background: #111;
+      color: #fff;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: none;
+      font-size: 14px;
+      background: #111;
+      color: #fff;
+    }
+
+    .services {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .services p {
+      margin-top: 10px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2 style="font-size: 28px;">NamnpåFirman 🖌️</h2>
+  <nav>
+    <a href="#home">Hem</a>
+    <a href="#gallery">Galleri</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Professionellt måleri</h1>
+  <p>Vi erbjuder kvalitativ målning för hem och företag.</p>
+</section>
+
+<section class="services">
+  <h2>Våra tjänster</h2>
+  <p>Vi utför allt inom måleri – Inomhus, Utomhus, Tapetsering och Golvmålning eller om du har ett special uppdrag så tittar vi gärna på det.</p>
+</section>
+
+<section id="gallery">
+  <h2>Galleri</h2>
+  <div class="gallery">
+    <img src="image1.jpg" alt="Måleriprojekt">
+    <img src="image2.jpg" alt="Måleriprojekt">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Kontakt</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Namn" required>
+    <input type="email" placeholder="E-post" required>
+    <textarea rows="5" placeholder="Meddelande" required></textarea>
+    <button type="submit">Skicka</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Måleri</p>
+</footer>
+
+</body>
+</html>
